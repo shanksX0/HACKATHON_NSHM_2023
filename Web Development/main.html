@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASI Kolkata</title>
+</head>
+
+<body>
+
+  <h1><img src="ana.png"></h1>
+  <input type="text"><input type="submit" value="SEARCH"><br><br>
+  <img src="FREQUENTLY ASKED QUESTIONS.jpg" height="500" width="1400"><br>
+  <p style="font-size: 54px; background-color: orangered;">HIGHLIGHTS OF LAST NSHM KOLKATA CHAPTER</p>
+  <A href="why.html">WHY SHOULD WE JOIN ASI ?</A><br><br>
+  <a href="ai.html">INTRODUCTION TO A.I</a><br><br>
+  <a href="http://www.asikol.nshm.com/pages/gallery.html">ACHIEVEMENTS OF ASI KOLKATA</a>
+  <p style="font-size: 28px;background-color: orangered; ">COUNTDOWN FOR NEXT SEMINAR SESSION</p>
+
+  <p id="demo"></p>
+
+  <script>
+
+    var countDownDate = new Date("Sept 15, 2027 13:00:00").getTime();
+
+
+    var x = setInterval(function () {
+
+
+      var now = new Date().getTime();
+
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script><br>
+  <style>
+    p {
+      text-align: center;
+    }
+  </style>
+  <p>*<a href="http://www.asikol.nshm.com/pages/index.html">HOME</a>*</p>
+  <h3 style="font-size: 28px;background-color:orangered ;">PROGRAM CHAIRS :</h3><br>
+  <img src="profdinesh.jpg"><img src="indranil.png"><img src="ambarish.jpg"><br>
+  <h3 style="font-size: 35px;">About ASI Kolkata Chapter :</h3>
+  The Analytics Society of India (ASI), Kolkata Chapter is mentored by its parent body - ASI at Indian Institute of
+  Management Bangalore. ASI is the largest body of analytics professionals and organizations in India. The society has
+  been founded by eminent personalities from Indian Institute of Science, Bangalore (IISc) and Indian Institute of
+  Management, Bangalore (IIMB) with an objective of promoting and propagating knowledge in the area of analytics.
+  Various blue-chip corporate organizations, educational institutions and individuals from across the country are
+  members of this society. ASI provides a platform for organizations and people to come together to share their
+  knowledge, resources and address their challenges in the field of analytics. It promotes research and application in
+  this domain.
+  <br>
+  <h4>CONTACT US : asi.kolchp@gmail.com</h4>
+  <p><img src="nshm logo.png" height="300" width="800"></p>
+</body>
+
+</html>
